@@ -1,8 +1,14 @@
-blah: blah.o
-	cc blah.o - blah # Runs third
+CC=
+INCDIRS=
+OPT=
+CFLAGS=
 
-blah.o: blah.c
-	cc -c blah.c -o blah.o # Runs second
+CFILES=
+OBJECTS= 
 
-blah.c:
-	echo "int main() { return 0; }" > blah.c
+BINARY=bin
+
+all: $(BINARY)
+
+$(BINARY): $(OBJECTS)
+	$(CC) 
