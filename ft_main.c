@@ -6,13 +6,18 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 11:48:43 by jwadding          #+#    #+#             */
-/*   Updated: 2023/10/31 16:28:00 by jwadding         ###   ########.fr       */
+/*   Updated: 2023/10/31 17:12:08 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+/*
 void	ft_add_one(int* value);
 void	ft_add_two(int* value);
 void	ft_putchar(int c);
+*/
+
+#include"header.h"
 
 int	main(void)
 {
