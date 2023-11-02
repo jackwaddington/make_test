@@ -8,10 +8,10 @@ OBJECTS=ft_add_one.o ft_add_two.o ft_putchar.o ft_add_one.o ft_main.o
 
 BINARY=bin
 
-all:$(BINARY)
+all: $(BINARY)
 
-$(BINARY):$(OBJECTS)
-	$(CC) $@ $^
+$(BINARY): $(OBJECTS)
+	$(CC) -o  $@ $^
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c -o $@ $^
@@ -23,4 +23,3 @@ fclean: clean
 	rm -f $(BINARY).a
 	
 re: fclean all
-
