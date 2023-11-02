@@ -1,25 +1,23 @@
 CC=cc
-INCDIRS=
-OPT=
 CFLAGS=-Wall -Wextra -Werror
 
-CFILES=ft_add_one.c ft_add_two.c ft_putchar.c ft_add_one.c ft_main.c
-OBJECTS=ft_add_one.o ft_add_two.o ft_putchar.o ft_add_one.o ft_main.o 
+SRCS=ft_add_one.c ft_add_two.c ft_putchar.c ft_add_one.c ft_main.c
+OBJS=$(SRCS:.c=.o) 
 
-BINARY=bin
+BIN=make_test
 
-all: $(BINARY)
+all: $(BIN)
 
-$(BINARY): $(OBJECTS)
+$(BIN): $(OBJS)
 	$(CC) -o  $@ $^
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c -o $@ $^
 
 clean:
-	rm -rf $(BINARY) *.o
+	rm -rf $(BIN) *.o
 
 fclean: clean
-	rm -f $(BINARY).a
+	rm -f $(BIN).a
 	
 re: fclean all
