@@ -6,7 +6,7 @@ OBJS=$(SRCS:.c=.o)
 
 BIN=make_test
 
-this_does_not_need_to_be_called_all: $(BIN)
+all: $(BIN)
 
 $(BIN): $(OBJS)
 	$(CC) -o  $@ $^
